@@ -1,5 +1,7 @@
 ## 📊 E-commerce Revenue Leakage Analysis
 
+> Built to identify hidden revenue loss and prioritize high-impact business decisions.
+
 ### 🚀 Overview
 
 End-to-end SQL + Power BI project analyzing revenue leakage, discount inefficiencies, and growth quality in an e-commerce dataset.
@@ -25,7 +27,7 @@ Built a structured data model and KPI framework to uncover hidden revenue loss a
 
 ---
 
-### 📊 Dashboard Pages
+### 📊 Dashboard Structure
 
 1. Overview
 2. Leakage Analysis
