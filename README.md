@@ -1,103 +1,87 @@
-# 📊 E-commerce Revenue Leakage Analysis (SQL + Power BI)
+## 📊 E-commerce Revenue Leakage Analysis
 
-## 🚀 Overview
+### 🚀 Overview
 
-This project builds an end-to-end analytics solution to identify revenue leakage, discount inefficiencies, and growth quality in an e-commerce dataset.
+End-to-end SQL + Power BI project analyzing revenue leakage, discount inefficiencies, and growth quality in an e-commerce dataset.
 
-The goal is to transform raw transactional data into a structured analytical model and generate actionable business insights.
-
----
-
-## 🧠 Business Problem
-
-E-commerce businesses often struggle with:
-
-* High discount dependency
-* Revenue loss due to cancellations and returns
-* Lack of clarity on category performance
-* Misleading growth driven by discounts
-
-This project addresses these challenges using data modeling and analytics.
+Built a structured data model and KPI framework to uncover hidden revenue loss and enable better, data-driven business decisions.
 
 ---
 
-## 🏗️ Data Architecture
+### 🎯 Business Problem
 
-```
-Raw CSV → SQL Server → Clean View → Star Schema → Power BI Dashboard
-```
-
-### Tables Created:
-
-* **Fact Table:** `fact_sales`
-* **Dimensions:**
-
-  * `dim_customer`
-  * `dim_product`
-  * `dim_category`
-  * `dim_date`
-  * `dim_seller`
+* Revenue leakage due to discounts, returns, and cancellations
+* Poor visibility into true growth vs discount-driven growth
+* Lack of prioritization in identifying high-impact problem areas
 
 ---
 
-## 🔧 Data Modeling
+### 🧠 Approach
 
-* Designed a **star schema** for scalable analysis
-* Handled duplicates and ensured **1-to-many relationships**
-* Separated category into its own dimension to avoid many-to-many issues
-* Created a proper date table for time intelligence analysis
-
----
-
-## 📊 Key Metrics
-
-* Gross Revenue
-* Net Revenue
-* Discount Amount
-* Average Order Value (AOV)
-* Discount Erosion %
-* Leakage %
-* Cancellation Rate
-* Return Rate
-* Growth Metrics (MoM / YoY)
+* Designed a scalable **star schema** (fact_sales + dimension tables)
+* Built core KPIs: **Gross Revenue, Net Revenue, Leakage %, AOV**
+* Developed a **Leakage Impact Score (Impact × Frequency)** to prioritize business issues
+* Created a prioritization framework to identify high-impact revenue leakage areas
 
 ---
 
-## 🔍 Key Insights
+### 📊 Dashboard Pages
 
-* Some categories generate high revenue but also contribute significantly to leakage
-* Growth is partially driven by discounts, indicating dependency risk
+1. Overview
+2. Leakage Analysis
+3. Growth Analysis
+4. Prioritization
+
+---
+
+### 🔍 Key Insights
+
+* High-revenue categories also contribute significantly to leakage
+* Growth is partially driven by heavy discounting, indicating dependency risk
 * Returns and cancellations are major contributors to revenue loss
-* Certain payment methods show higher leakage behavior
+* Certain customer segments and payment methods show higher leakage behavior
 
 ---
 
-## 📈 Dashboard Features
+### 🚀 Recommendations
 
-* Revenue vs Net Revenue comparison
-* Category-level performance analysis
-* Discount impact and dependency tracking
-* Leakage analysis (returns + cancellations)
-* Growth trend analysis
-* Priority-based decision framework
+* Optimize discount strategy to reduce unnecessary revenue erosion
+* Focus on high-impact categories identified through prioritization
+* Improve return and cancellation control mechanisms
+* Monitor growth quality, not just topline revenue
 
 ---
 
-## 🛠️ Tools Used
+### 🛠 Tools Used
 
-* SQL Server (Data modeling & transformation)
-* Power BI (DAX & visualization)
-* CSV (Raw dataset)
+SQL Server | Power BI | DAX
 
 ---
 
-## 📸 Dashboard Preview
+### 🏗 Data Model
 
-(Add screenshots here)
+**Star Schema:**
+fact_sales + dim_customer, dim_product, dim_category, dim_date, dim_seller
 
 ---
 
-## 📌 Author
+### 📸 Dashboard Preview
 
-**Suraj Bhandari**
+### 📸 Dashboard Preview
 
+#### 1. Overview
+![Overview](link)
+
+#### 2. Leakage Analysis
+![Leakage](link)
+
+#### 3. Growth Analysis
+![Growth](link)
+
+#### 4. Prioritization
+![Prioritization](link)
+
+---
+
+### 🧩 Data Model (Power BI)
+![Data Model](link)
