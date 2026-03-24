@@ -67,21 +67,19 @@ fact_sales + dim_customer, dim_product, dim_category, dim_date, dim_seller
 
 ### 📸 Dashboard Preview
 
-### 📸 Dashboard Preview
-
 #### 1. Overview
-![Overview](link)
+![Overview](overview.png)
 
 #### 2. Leakage Analysis
-![Leakage](link)
+![Leakage](leakage.png)
 
 #### 3. Growth Analysis
-![Growth](link)
+![Growth](growth.png)
 
 #### 4. Prioritization
-![Prioritization](link)
+![Prioritization](prioritization.png)
 
 ---
 
-### 🧩 Data Model (Power BI)
-![Data Model](link)
+### 🧩 Data Model
+![Data Model](model.png)
